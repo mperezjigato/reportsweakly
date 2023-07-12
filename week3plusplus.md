@@ -6,7 +6,7 @@ Progress on task 3 comprising HPC runs of the existing computational chemistry c
 
 It must be noted that on Friday, July 7th 2023, a meeting was held between the intern and GJB in order to discuss progress and possible further support required by the intern. This document contains the main points of the discussion. 
 
-In order to foster future discussions, eight separate sections have been included in this document: (i) Practical code (Ab-Initio and MD) HPC running, (ii) `Bash shell` scripting, (iii) templating, (iv) aspects of the strategy to complete task 3, (v) keeping track of relevant information. 
+In order to foster future discussions, five separate sections have been included in this document: (i) Practical code (Ab-Initio and MD) HPC running, (ii) `Bash shell` scripting, (iii) templating, (iv) aspects of the strategy to complete task 3, (v) keeping track of relevant information. 
 
 ## Practical code (Ab-Initio and MD) HPC running
 
