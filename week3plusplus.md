@@ -97,7 +97,7 @@ A decision needs to be made regarding: (i) a selection of codes, (ii) how compre
 
 Since the documentation of the MD and ab-initio codes is quite extensive, this section is an attempt to identify the shortcuts for HPC running efficiency. Key steps of the calculation, like automatised input generation are to be addressed as well.
 
-### The *LAMMPS template library* and *LAMMPS-template-tool*
+### The *LAMMPS template library* and *LAMMPS-Template-Tool*
 
 The intern has come across information regarding LAMMPS according to which in previous versions there existed a collection of input generation templates [^6] that cover the full functionality: One special script per type of calculation.On the other hand, a recent Python templating system for LAMMPS inputs has been identified as well [^7].   
 
@@ -113,7 +113,7 @@ On the other hand, the material provided by the MAX centre [^11] is to be explor
 
 ### High-Throughput Computational Materials Science (HTCMS) platforms
 
-Providing workflows in computational materials science, both the *atomic simulation recipes* (ASR) [^15] and *AiiDA* [^16] constitute noticeable software (not to forget pymatgen/AFLOW/the materials project) powering HTCMS platforms. Big-Data (and HPC) based HTCMS platforms offer a variety of web interfaces very useful from the point of view of input/structural file generation as well as data wrangling-machine learning-data mining and pre-/post_processing, alongside powerful database technology. At this point, it seems appropriate to discuss the case of the "Quantum ESPRESSO input generator and structure visualizer" [^17] at Aiida-based Materials Cloud [^18]. This subsection constitutes in itself a proposal, considering that none of the mentioned software packages has ever been installed at Genius. The gains for the materials science community would be huge and, although in principle you can run the software on your laptop, the full infrastructure would be required in order to achieve the functionality.
+Providing workflows in computational materials science, both the *atomic simulation recipes* (ASR) [^15] and *AiiDA* [^16] constitute noticeable software (not to forget pymatgen/AFLOW/the materials project) powering HTCMS platforms. Big-Data (and HPC) based HTCMS platforms offer a variety of web interfaces very useful from the point of view of input/structural file generation as well as data wrangling-machine learning-data mining and pre-/post_processing, alongside powerful database technology. At this point, it seems appropriate to discuss the case of the "Quantum ESPRESSO input generator and structure visualizer" [^17] at Aiida-based Materials Cloud [^18]. This subsection constitutes in itself a proposal, considering that none of the mentioned software packages has ever been installed at Genius. The gains for the materials science community would be huge and, although in principle you could run the software on your own laptop, the full infrastructure would be required in order to achieve the complete functionality of Big-Data based HTCMS.
 
 [^1]: in.ethanol/data.ethanol ("1-performance-exercise"): See the material provided with the tutorial "LAMMPS Course for Intermediate Users" https://epcced.github.io/archer2-advanced-use-of-lammps/
 [^2]: "Linux scripting", by Mag Selwa, ICTS-Leuven, https://github.com/orgs/hpcleuven/repositorie
