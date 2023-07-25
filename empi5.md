@@ -1,0 +1,3 @@
+|          |            pure OpenMP         |           pure MPI              |
+|----------|--------------------------------|---------------------------------|
+|t/min:sec | <table>  <thead>  <tr>  <th>pOMP:36c</th>  <th>pOMP:20c</th>  </tr>  </thead>  <tbody>  <tr>  <td>0:01:06</td>  <td>0:01:15</td>  </tr>  </tbody>  </table>      | <table>  <thead>  <tr>  <th>pMPI:36c</th>  <th>pMPI:72c</th>  <th>pMPI:144c</th>  </tr>  </thead>  <tbody>  <tr>  <td>0:02:58</td>  <td>0:01:22</td>  <td>0:01:02</td>  </tr>  </tbody>  </table>      |
