@@ -74,4 +74,4 @@ In this case, the search/replace operation is carried out linewise, via a nested
 
 [^1]: ("2-post-analysis"): A Lennard-Jones fluid simple MD calculation. See the material provided with the tutorial "LAMMPS Course for Intermediate Users" https://epcced.github.io/archer2-advanced-use-of-lammps/
 
-[^2]: Both fcc alloys made out of elemental fcc (Ag, Au, Rh, Pd, Ir, Pt) metals as well as bcc alloys made out of elemental bcc metals (Nb, Mo, Ta, W) are of interest. Whilst the former are well known for their ductility, the latter seem to exhibit high hardness.
+[^2]: Solid solutions of quinary alloys are currently cosidered the best candidates for high-entropy alloys.
