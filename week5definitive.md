@@ -1,6 +1,6 @@
 # Internship - Week 5 - Summary
 
-Two separate systems are used as testbeds for all avialable parallelisation options of LAMMPS: The ethanol box calculation (week 4) and a Lennard-Jones fluid calculation [^1].
+Two separate systems are used as testbeds for all available parallelisation options of LAMMPS: The ethanol box calculation (week 4) and a Lennard-Jones fluid calculation [^1].
 
 Pure OpenMP as well as pure MPI and hybrid runs are reported under specific submission parameters. Moreover, HPC runs including the Kokkos acceleration package of LAMMPS are considered. A set of job submission scripts have been uploaded in the "computationalchemistry" GitHub repository and total wall time tables are enclosed below for both cases:
 
