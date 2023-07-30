@@ -20,7 +20,7 @@ On the other, the five as provided LAMMPS benchmarks have been run: 1000 time-st
 Three types of calculation have been tried for each, ie sequential, fix-scale (MPI) and scaled-size (MPI) calculations. Data are reported only for the MPI scaled-size calculations [^1] (see below). 
 
 Moreover, the `pyiron` HTCMS software has been locally implemented by the intern on the guest2 laptop under Ubuntu 22.04 LTS, in order to shortly start generating geometries for single-phase crystalline solid solutions as required for High-Entropy alloys [^2] calculations with LAMMPS. Likewise, one of the traditional problems
-of equilibrium molecular dynamics, the calculation of heat transport, seems to have been resolved by Stefano Baroni and co-workers via a new theory based on the cepstral analysis of current time series derived from equilibrium molecular dynamics. We are in the process of installing the SporTran [^3] software for heat transport in combination with LAMMPS.  
+of equilibrium molecular dynamics, the calculation of heat transport, seems to have been resolved by Stefano Baroni and co-workers via a new theory based on the cepstral analysis of current time series derived from equilibrium molecular dynamics. We are in the process of installing the SporTran [^3] software for heat transport calculations in combination with LAMMPS.  
 
 ### Amorphous silica geometry generation (Vashishta)
 
