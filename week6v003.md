@@ -3,6 +3,8 @@
 
 ## Progress on HPC runs of MD and Ab-Initio codes within the *Development of Supercomputing Training Material for Computational Chemistry* task
 
+Following previous work on the Computational Chemistry task, I have decided not to report any hybrid calculations data for the time being. Once the consistency problem we identified last week for hybrid parallel calculations is fully resolved, calculations using that mode will resume. Therefore, only OpenMP and MPI data are discussed now.
+
 On the one hand, simple materials science problems provided within the examples directory of the LAMMPS distribution have been run (the force-field type is given in brackets). Wall time tables for the first case are given at the bottom of the document. No data are reported for the other three cases (only the first case takes long enough as to record wall times). The systems that have been run include:
  - Amorphous Silica geometry generation (Vashishta).
  - Cu2O elasticity (COMB).
