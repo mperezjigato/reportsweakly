@@ -11,12 +11,12 @@ Simple materials science problems provided within the examples directory of the 
 
 Wall time tables for the Silica amorphisation case are given at the bottom of the document. No data are reported for the other three cases.
 
-On the other hand, the as provided LAMMPS benchmarks have been run:
-
-
-
-
-
+On the other hand, the five as provided LAMMPS benchmarks have been run: 1000 time-steps for 32000 atom systems (starting geometry). Namely,
+ 1. NVE integration of a Lennard-Jones fluid.
+ 2. NVE integration of a bead-spring polymer melt under the FENE approximation.
+ 3. NVE integration of fcc Cu under the EAM potential.
+ 4. NVE integration of granular Chutte flow.
+ 5. NPT integration of the rhodopsin protein in solvated lipid bilayer under the CHARMM force-field and the PPPM Coulomb solution method.
 Three types of benchmark have been tried, ie sequential, fix-scale (MPI) and scaled-size (MPI) calculations. Data are reported only for the scaled-size calculations [^1] (see below). 
 
 # Amorphous silica geometry generation (Vashishta)
