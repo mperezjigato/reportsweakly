@@ -15,7 +15,7 @@ On the other, the five as provided LAMMPS benchmarks have been run: 32000 atom s
  1. NVE integration of a Lennard-Jones fluid.
  2. NVE integration of a bead-spring polymer melt under the FENE approximation.
  3. NVE integration of fcc Cu under the EAM potential.
- 4. NVE integration of granular Chutte flow.
+ 4. NVE integration of granular Chute flow.
  5. NPT integration of the rhodopsin protein in solvated lipid bilayer under the CHARMM force-field and the PPPM Coulomb solution method.
     
 Three types of calculation have been tried for each, ie sequential, fix-scale (MPI) and scaled-size (MPI) calculations. Data are reported only for the MPI scaled-size calculations [^1] (see below). It should be noted that the number of time-steps has been modified in order to ensure a squential wall-time of ca. 2 minutes in all five cases.  
