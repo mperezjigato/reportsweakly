@@ -17,6 +17,7 @@ On the other, the five as provided LAMMPS benchmarks have been run: 32000 atom s
  3. NVE integration of fcc Cu under the EAM potential.
  4. NVE integration of granular Chutte flow.
  5. NPT integration of the rhodopsin protein in solvated lipid bilayer under the CHARMM force-field and the PPPM Coulomb solution method.
+    
 Three types of calculation have been tried for each, ie sequential, fix-scale (MPI) and scaled-size (MPI) calculations. Data are reported only for the MPI scaled-size calculations [^1] (see below). It should be noted that the number of time-steps has been modified in order to ensure a squential wall-time of ca. 2 minutes in all five cases.  
 
 Moreover, the `pyiron` HTCMS software [^2] has been locally implemented by the intern on the guest2 laptop under Ubuntu 22.04 LTS, in order to shortly start generating geometries for single-phase crystalline solid solutions as seems optimal for High-Entropy alloys. Likewise, one of the traditional problems of equilibrium molecular dynamics, the calculation of heat transport, seems to have been resolved by Stefano Baroni and co-workers via a new theory based on the cepstral analysis of current time series derived from equilibrium molecular dynamics. We are in the process of installing Baroni's SporTran [^3] software for heat transport calculations in combination with LAMMPS.
