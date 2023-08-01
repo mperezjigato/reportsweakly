@@ -1,4 +1,4 @@
-# Internship - Week 3 - Summary: *Development of training material for Computational Chemistry supercomputing applications at VSC*
+# Internship - Week 3 - Summary
 
 Efforts have been devoted to the completion of task 3. As a long-term project, a strategy for task 3 has to be devised alongside giving strides towards the actual practical HPC computational runs of the involved codes.
 
@@ -8,7 +8,7 @@ It must be noted that on Friday, July 7th 2023, a meeting was held between the i
 
 In order to foster future discussions, five separate sections have been included in this document: (i) Practical code (Ab-Initio and MD) HPC running, (ii) `Bash shell` scripting, (iii) templating, (iv) aspects of the strategy to complete task 3, (v) keeping track of relevant information. 
 
-## Practical code (Ab-Initio and MD) HPC running
+## *Development of training material for Computational Chemistry supercomputing applications at VSC*: Practical code (Ab-Initio and MD) HPC running
 
 Work on ABINIT and LAMMPS is described next. Most of the intern's time has been devoted to LAMMPS, including information gathering and selected independent HPC runs.
 
