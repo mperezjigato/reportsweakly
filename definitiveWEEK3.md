@@ -1,16 +1,12 @@
 # Internship - Week 3 - Summary
 
-Efforts have been devoted to the completion of task 3. As a long-term project, a strategy for task 3 has to be devised alongside giving strides towards the actual practical HPC computational runs of the involved codes.
+Efforts have been devoted to the completion of task 3. As a long-term project, a strategy for task 3 has to be devised alongside giving strides towards the actual practical HPC computational runs of the involved codes. Progress on task 3 comprising HPC runs of the existing computational chemistry codes has met the added benefit of the intern acquiring `BASH shell` scripting skills as well as of learning the concept of templating.
 
-Progress on task 3 comprising HPC runs of the existing computational chemistry codes has met the added benefit of the intern acquiring `BASH shell` scripting skills as well as of learning the concept of templating.
-
-It must be noted that on Friday, July 7th 2023, a meeting was held between the intern and GJB in order to discuss progress and possible further support required by the intern. This document contains the main points of the discussion. 
-
-In order to foster future discussions, five separate sections have been included in this document: (i) Practical code (Ab-Initio and MD) HPC running, (ii) `Bash shell` scripting, (iii) templating, (iv) aspects of the strategy to complete task 3, (v) keeping track of relevant information. 
+It must be noted that on Friday, July 7th 2023, a meeting was held between the intern and GJB in order to discuss progress and possible further support required by the intern. This document contains the main points of the discussion. In order to foster future discussions, five separate sections have been included in this document: (i) Practical code (Ab-Initio and MD) HPC running, (ii) `Bash shell` scripting, (iii) templating, (iv) aspects of the strategy to complete task 3, (v) keeping track of relevant information. 
 
 ## *Development of training material for Computational Chemistry supercomputing applications at VSC*: Practical code (Ab-Initio and MD) HPC running
 
-Work on ABINIT and LAMMPS is described next. Most of the intern's time has been devoted to LAMMPS, including information gathering and selected independent HPC runs.
+Work on ABINIT and LAMMPS is described next. Most of the intern's time has been devoted to LAMMPS, including information gathering as well as the selection of independent HPC runs.
 
 Regarding ABINIT, the problem we had met (mentioned already on week's 1 report) and regarding the failure of the Test Suite for versions 8.8.3 and 8.4.4 on *Genius* seems to persist on version 9.6.0: The intern did this time a `sudo` ABINIT installation on the guest2 laptop under Ubuntu 22.04 LTS, and the 9.6.0 version test suite exhibited the same (Python) error message we had met on the HPC with the more obsolete versions. 
 
@@ -114,7 +110,7 @@ On the other hand, the material provided by the MAX centre [^11] is to be explor
 
 ### High-Throughput Computational Materials Science (HTCMS) platforms
 
-Providing workflows in computational materials science, both the *atomic simulation recipes* (ASR) [^15] and *AiiDA* [^16] constitute noticeable software (not to forget pymatgen/AFLOW/the materials project) powering HTCMS platforms. Big-Data (and HPC) based HTCMS platforms offer a variety of web interfaces very useful from the point of view of input/structural file generation as well as data wrangling-machine learning-data mining and pre-/post_processing, alongside powerful database technology. At this point, it seems appropriate to discuss the case of the "Quantum ESPRESSO input generator and structure visualizer" [^17] at Aiida-based Materials Cloud [^18]. This subsection constitutes in itself a proposal, considering that none of the mentioned software packages has ever been installed at Genius. The gains for the materials science community would be huge and, although in principle you could run the software on your own laptop, the full infrastructure would be required in order to achieve the complete functionality of Big-Data based HTCMS.
+Providing workflows in computational materials science, both the *atomic simulation recipes* (ASR) [^15] and *AiiDA* [^16] constitute noticeable software (not to forget pymatgen/AFLOW/materials genome) powering HTCMS platforms. Big-Data (and HPC) based HTCMS platforms offer a variety of web interfaces very useful from the point of view of input/structural file generation as well as data wrangling-machine learning-data mining and pre-/post_processing, alongside powerful database technology, and a full HPC setup for high-throughput computational materials science calculations. At this point, it seems appropriate to discuss the case of the "Quantum ESPRESSO input generator and structure visualizer" [^17] at Aiida-based Materials Cloud [^18]. This subsection constitutes in itself a proposal, considering that none of the mentioned software packages has ever been installed at Genius. The gains for the University of Hasselt's materials science community would be enormous and, although in principle you could run the software on your own laptop, the full infrastructure would be required in order to achieve the complete functionality of Big-Data based HTCMS.
 
 [^1]: in.ethanol/data.ethanol ("1-performance-exercise"): See the material provided with the tutorial "LAMMPS Course for Intermediate Users" https://epcced.github.io/archer2-advanced-use-of-lammps/
 [^2]: "Linux scripting", by Mag Selwa, ICTS-Leuven, https://github.com/orgs/hpcleuven/repositorie
