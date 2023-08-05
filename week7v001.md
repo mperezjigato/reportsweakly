@@ -17,15 +17,15 @@ This is one of the LAMMPS provided examples, which has two-dimensional periodici
 
 ### Geometry tools
 
-Both "CIF2CELL" and "atomsk" have been installed and are currently being tested for CIF/XSF/PDB geometry generation, as well as for producing geometries appropriate to the LAMMPS syntax. At the moment, simple geometries and supercells are being built. The latter is very helpful as starting point for point defect geometry generation, for which a specific tool associated to ASE is to be teste shortly. 
+Both "CIF2CELL" and "atomsk" have been installed and are currently being tested for CIF/XSF/PDB geometry generation, as well as for producing geometries appropriate to the LAMMPS syntax. At the moment, simple geometries and supercells are being built. The latter is very helpful as starting point for point defect geometry generation, for which a specific tool associated to ASE is to be installed and tested shortly. 
 
 Moreover, the inverse process of converting LAMMPS geometry files provided within the examples/benchmark directories of the distribution, to CIF/PDB/XSF geometries for direct visualisation, is being tried in order to identify some of the provided complex systems (the rhodopsin protein example for instance).
-y
-PYMOL for visualising PDB files, as well as XCRYSDEN for XSF files have been installed. On the other hand, the crystal toolkit within the materials project website (materialsproject.org) is used to visualise CIF files. Regarding the latter, it must be noted that some crystal databases contain their own visualisation facility
+
+PYMOL for visualising PDB files, as well as XCRYSDEN for XSF files have been installed. On the other hand, the crystal toolkit within the materials project website (materialsproject.org) is used to visualise CIF files. Regarding the latter, it must be noted that some crystal databases contain their own visualisation facility.
 
 ### Geometry databases and specific geometry file acquisition
 
-A list of specific websites with structural databases (and CIF files) is given next for crystalline solids:
+A list of specific websites with structural databases (and CIF files) for crystalline solids is given next:
  1. The "materials explorer" within materialsproject.org.
  1. The "Crystallography Open Database" (COD): crystallography.net.
  1. BILBAO CRYSTALLOGRAPHY SERVER: https://www.cryst.ehu.es/.
