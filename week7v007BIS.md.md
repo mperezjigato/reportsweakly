@@ -109,7 +109,7 @@ The standard in parallel computing is that the outcome of the serial calculation
 At this point, it seems almost irrelevant to discuss calculation timing. For the sake of completeness, the table below shows total wall times (including statistics), without further discussion:
 |calculation mode  |sequential |MPI 36     |0penMP 36  |Hybrid-with|Hybrid-no |
 |------------------|-----------|-----------|-----------|-----------|----------|
-|core configuration|     -     |     -     |     -     |2 pr/18thr |2 pr/18thr|
+|core configuration|     -     |     -     |     -     | 2pr/18th  | 2pr/18th |
 |time (sec) 1      |    480    |    18     |    196    |    223    |   223    |
 |time (sec) 2      |    479    |    18     |    141    |    222    |   223    |
 |time (sec) 3      |    479    |    18     |    111    |    223    |   224    |
@@ -120,7 +120,7 @@ At this point, it seems almost irrelevant to discuss calculation timing. For the
 |time (sec) 8      |    454    |    18     |    229    |    221    |   224    |
 |time (sec) 9      |    456    |    18     |    139    |    222    |   221    |
 |time (sec) 10     |    468    |    19     |     73    |    221    |   223    | 
- pa
+
 Direct inspection of the wall time data seems to indicate that the actual core configuration for hybrid calculations (number of MPI processes/number of OpenMP threads) is far from optimal, considering there is no difference in the timing values for both hybrid parallel modes.It must be noted that the original indications of a possible problem stemmed from the non-negligible differences in wall time for both hybrid modes. As a matter of fact, going back to the wall time tables in the report of week 5 for the Lennard-Jones fluid hybrid calculations, it is apparent that in terms of timing, the optimal situation corresponds to the smallest possible number of OpenMP threads. Regarding a single node (36 GENIUS core) calculation, the hybrid mode including all the options described in the manual seems to get the lowest wall time for a core configuration of 18 MPI processes/2 OpenMP threads (162 seconds), while the hybrid mode without those options, gets the lowest wall time value for a 12 MPI processes/3 OpenMP threads configuration (123 seconds). The converse are 143 seconds (18/2 configuration for hybrid mode without options) and 201 seconds (12/3 configuration for hybrid mode with all the options). We must try for our case both configurations, ie 18/2 and 12/3.
 
 On the other hand, we can conclude that there exists a real problem, and it has to do with the accuracy of parallel LAMMPS calculations  whenever OpenMP is introduced. Our conclusion has been reconfirmed by carrying out pure OpenMP calculations on 2 cores and 1 core under the `-sf om` option.
