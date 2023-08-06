@@ -143,7 +143,7 @@ Both "CIF2CELL" and "atomsk" have been installed and are currently being tested 
 
 Moreover, the inverse process of converting LAMMPS geometry files provided within the examples/benchmark directories of the distribution, to CIF/PDB/XSF geometries for direct visualisation, is being tried in order to identify some of the provided complex systems (the rhodopsin protein example for instance).
 
-PYMOL for visualising PDB files, as well as XCRYSDEN for XSF files have been installed. On the other hand, the crystal toolkit within the materials project website (materialsproject.org) is used to visualise CIF files. Regarding the latter, it must be noted that some crystal databases contain their own visualisation facility.
+PYMOL and YASARA for visualising PDB files, as well as XCRYSDEN for XSF files have been installed. On the other hand, the crystal toolkit within the materials project website (materialsproject.org) is used to visualise CIF files. Regarding the latter, it must be noted that some crystal databases contain their own visualisation facility.
 
 ### Geometry databases and specific geometry file acquisition
 
