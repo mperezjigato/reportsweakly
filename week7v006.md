@@ -106,7 +106,7 @@ As far as we understand, the standard in parallel computing is that the outcome 
   1. Pure OpenMP calculation, and
   1. Hybrid calculation under `mpirun lmp -sf omp -pk omp ${OMP_NUM_THREADS}`
 
-At this point, it seems almost irrelevant to discuss calculation timing. For the sake of completeness, the table below shows total wall times, and no further discussion is added:
+At this point, it seems almost irrelevant to discuss calculation timing. For the sake of completeness, the table below shows total wall times, without further discussion:
 
 ## Running an MPI weak scaling problem: OH adsorbed on graphene deposited on Cu2O(110)
 
