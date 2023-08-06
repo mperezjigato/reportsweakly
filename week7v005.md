@@ -10,11 +10,11 @@ Since I identified last week what I thought could be a problem when running LAMM
 During this week, GJB has provided an extensive description of the well known "racing problem", which is typical of OpenMP. He insisted in this possibility as the most likely source of the above wall time discrepancies found for hybrid mode calculations (see week 6 report). A direct inspection of the outputs has let us see that different C++ routines are called/run in the hybrid mode (when including all the options described in the documentation), as opposed to not using such options. The LAMMPS manual already explains that an explicit subroutine (omp 0) that sets up explicit variables with an extension "omp" in their name is called whenever the `-sf omp` option is utilised, in common with pure OpenMP calculations. On the other hand, the `-pk` option calls an explicit LAMMPS package. It is fair to say that, in principle, running parallel LAMMPS jobs in the hybrid mode, should strictly follow the LAMMPS manual, and, therefore, the results obtained in the hybrid mode, without the appropiate option syntax, must simply be discarded as wrongful!
 
 Still, we decided to seek an explanation. Following GJB's suggestions on the nature of the "OpenMP racing problem", which would involve the appearance of uncertainty in the absolute values of the computed properties as well as on the total wall time, we made the decision of comparing for one specific system ('sic') the output of:
- 1. Sequential calculation.
- 1. MPI calculation.
- 1. OpenMP calculation.
- 1. Hybrid calculation with all the correct manual options (-sf omp/-pk omp N).
- 1. Hybrid calculation with no options included.
+ - Sequential calculation.
+ - MPI calculation.
+ - OpenMP calculation.
+ - Hybrid calculation with all the correct manual options (-sf omp/-pk omp N).
+ - Hybrid calculation with no options included.
 
 Key to this exercise, provided our hypothesis had been correct, was to include some statistics in the data. Therefore, we computed ten times each of the above calculations. On the other hand, we decided to pick up a specific physical property well known for the dependence of its absolute value on the convergence criteria, ie a second energy derivative, phonons/elastic constants. For that reason, the system we have investigated for this purpose is the Cu2O elestic constants problem, which is located within the examples directory of the LAMMPS distribution ("COMB").
 
