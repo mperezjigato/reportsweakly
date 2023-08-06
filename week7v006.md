@@ -18,7 +18,7 @@ Still, we decided to seek an explanation. Following GJB's suggestions on the nat
 
 Key to this exercise, provided our hypothesis had been correct, was to include some statistics in the data. Therefore, we computed ten times each of the above calculations. On the other hand, we decided to pick a specific physical property well known for the dependence of its absolute value on the convergence criteria, ie a second energy derivative, phonons/elastic constants. For that reason, the system we have investigated for this purpose is the Cu2O elastic constants problem, which is located within the examples directory of the LAMMPS distribution ("COMB").
 
-To our surprise, the outcome indicates that the "OpenMP racing problem" has to be discarded as the source of the problem: No statistical variation of the absolute values of the computed elastic constants can be seen at all, all ten calculations for each of the modes produced the same values. Still, we seem to have partly isolated the problem, since, after comparing the elastic constants for all five calculation modes, we find two separate groups of values:
+To our surprise, the outcome indicates that the "OpenMP racing problem" has to be discarded as the source of our numerical discrepancies: No statistical variation of the absolute values of the computed elastic constants can be seen at all, all ten calculations for each of the modes produced the same values. Still, we seem to have partly isolated the problem, since, after comparing the elastic constants for all five calculation modes, we find two separate groups of values:
 
  - Sequential:
  ```
