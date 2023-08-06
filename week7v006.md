@@ -107,6 +107,19 @@ As far as we understand, the standard in parallel computing is that the outcome 
   1. Hybrid calculation under `mpirun lmp -sf omp -pk omp ${OMP_NUM_THREADS}`
 
 At this point, it seems almost irrelevant to discuss calculation timing. For the sake of completeness, the table below shows total wall times (including statistics), without further discussion:
+|calculation mode  |sequential |MPI 36     |0penMP 36  |Hybrid-with|Hybrid-no |
+|------------------|-----------|-----------|-----------|-----------|----------|
+|core configuration|     -     |     -     |     -     |2 pr/18thr |2 pr/18thr|
+|time (sec) 1      |    480    |    18     |    196    |    223    |   223    |
+|time (sec) 2      |    479    |    18     |    141    |    222    |   223    |
+|time (sec) 3      |    479    |    18     |    111    |    223    |   224    |
+|time (sec) 4      |    479    |    18     |    218    |    218    |   223    |
+|time (sec) 5      |    478    |    18     |     88    |    223    |   224    |
+|time (sec) 6      |    480    |    18     |    133    |    224    |   223    |
+|time (sec) 7      |    480    |    18     |    209    |    218    |   223    |
+|time (sec) 8      |    454    |    18     |    229    |    221    |   224    |
+|time (sec) 9      |    456    |    18     |    139    |    222    |   221    |
+|time (sec) 10     |    468    |    19     |     73    |    221    |   223    | 
 
 ## Running an MPI weak scaling problem: OH adsorbed on graphene deposited on Cu2O(110)
 
