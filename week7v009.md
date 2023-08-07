@@ -173,5 +173,5 @@ Moreover, the geometry files provided by the AlphaFold database [^2] is a good r
 
 ### Other LAMMPS packages: phonons, MC
 
-[^1]: 
+[^1]: https://www.vscentrum.be/alphafold
 [¨2]: https://alphafold.ebi.ac.uk/
