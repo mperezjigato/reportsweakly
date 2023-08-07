@@ -161,7 +161,7 @@ A list of specific websites with structural databases (and CIF files) for crysta
 
 Although no specific structural databases have been located for amorphous solids/glasses, the website of the SIMONS COLLABORATION FOR CRACKING THE GLASS PROBLEM (https://scglass.uchicago.edu/) provides an interesting entry point to the subject. A useful aspect of this source is given by sets of LAMMPS files for specific calculations within glass physics.
 
-Protein structural databases (http://www.rscb.org/ and https://alphafold.ebi.ac.uk/) are probably the best known in Science. They include both proteins in solution and in the crystalline state. The PDB format is the standard in protein geometries. As an example of geometry visualisation, the picture below depitcs the ZFHX4 gene, a transient protein, for which an initial guess of the structure ("template") is provided at the AlphaFold-EBI database.
+Protein structural databases (http://www.rscb.org/ and https://alphafold.ebi.ac.uk/) are probably the best known in Science. They include both proteins in solution and in the crystalline state. The PDB format is the standard in protein geometries. As an example of geometry visualisation, the picture below depitcs the ZFHX4 gene, which is a transient protein for which an initial guess of the structure ("template") is provided at the AlphaFold-EBI database.
 
 ![](structure.png)
 
