@@ -163,10 +163,15 @@ Although no specific structural databases have been located for amorphous solids
 Protein structural databases (http://www.rscb.org/ and https://alphafold.ebi.ac.uk/) are probably the best known in Science. They include both proteins in solution and in the crystalline state. The PDB format is the standard in protein geometries. There is an interesting aspect of the study of proteins from the point of view of the intern: The physics of hydrated proteins has one point in common with that of glasses, ie the dynamics of both is characterised by the "boson peak", which corresponds to low-frequency phonons in the Terahertz regime, and can be identified experimentally by Raman spectroscopy. Incidentally, the boson peak has been extensively documented in molecular dynamics studies for both proteins in water solutions and for glasses.
 
 Needless to say, the crystalline state of proteins is a manmade enterprise (pharmaceutical industry), whilst proteins in nature only exist in the hydrated state.
+
 ### AlphaFold
+
+As far as I can tell, the VSC/VIB training material [^1] on AlphaFold is the best of all the material that VSC provides for any software. It constitutes a really good entry point for anyone attempting to run AlphaFold on the GENIUS cluster. On the other hand, there exists an AlphaFold user group in Flanders.
+Moreover, the geometry files provided by the AlphaFold database [^2] is a good reference point for computing protein structures and dynamics.
 
 ### Thermodynamic integration
 
 ### Other LAMMPS packages: phonons, MC
 
- 
+[^1]: 
+[¨2]: https://alphafold.ebi.ac.uk/
