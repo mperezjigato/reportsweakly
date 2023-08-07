@@ -167,11 +167,11 @@ Needless to say, the crystalline state of proteins is a manmade enterprise (phar
 ### AlphaFold
 
 As far as I can tell, the VSC/VIB training material [^1] on AlphaFold is the best of all the material that VSC provides for any software. It constitutes a really good entry point for anyone attempting to run AlphaFold on the GENIUS cluster. On the other hand, there exists an AlphaFold user group in Flanders.
-Moreover, the geometry files provided by the AlphaFold database [^2] is a good reference point for computing protein structures and dynamics.
+Moreover, the geometry files provided by the AlphaFold-EBI database [^2] are very helpful for computing protein structures and dynamics.
 
 ### Thermodynamic integration
 
 ### Other LAMMPS packages: phonons, MC
 
 [^1]: https://www.vscentrum.be/alphafold
-[¨2]: https://alphafold.ebi.ac.uk/
+[^2]: https://alphafold.ebi.ac.uk/
