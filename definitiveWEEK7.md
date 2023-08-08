@@ -130,7 +130,9 @@ NOTE: The swift response from the LAMMPS developers is shown below:
 > Did some investigation on this:
 
 >> this issue also exists on 2Aug2023 (but really you should check by yourself to see if the newest version already has the bugfix…);
+
 >> there are large difference on c_fx[1] c_fx[2] c_fx[3] c_fx[4] c_fx[5] c_fx[6] (and other directions) between mpi only and OpenMP runs, while the energies are exactly same. So my guess is that the issue lies in the compute stress/atom for comb/omp;
+
 >> there are some changes in the format of log.lammps so that the elastic.f90 does not work out-of-the-box anymore. To workaround this I replaced all " Step Lx" with “Step Lx” in log.lammps before feeding it into that program.
 
 ## Running an MPI weak scaling problem: OH adsorbed on graphene deposited on Cu2O(110)
