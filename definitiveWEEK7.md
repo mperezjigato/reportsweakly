@@ -175,7 +175,15 @@ Protein structural databases (http://www.rscb.org/ and https://alphafold.ebi.ac.
 
 ![](structure.png)
 
-There is an interesting aspect of the study of proteins from the point of view of the intern: The physics of hydrated proteins has one point in common with that of glasses, ie the dynamics of both is characterised by the "boson peak", which corresponds to low-frequency phonons in the Terahertz regime, and can be identified experimentally by Raman spectroscopy. Incidentally, the boson peak has been extensively documented in molecular dynamics studies for both proteins in water solutions and for glasses. Needless to say, the crystalline state of proteins is a manmade enterprise (pharmaceutical industry), whilst proteins in nature only exist in the hydrated state.
+There is an interesting aspect of the study of proteins from the point of view of the intern: The physics of hydrated proteins has one point in common with that of glasses, ie the dynamics of both is characterised by the "boson peak", which corresponds to low-frequency phonons in the Terahertz regime, and can be identified experimentally by Raman spectroscopy. Incidentally, the boson peak has been extensively documented in molecular dynamics studies for both proteins in water solutions and for glasses. It is worth mentioning as well the current interest in protein molecular topology and the large-scale computer-aided drug design project VirtualFlow [^3]. Needless to say, the crystalline state of proteins is a manmade enterprise (pharmaceutical industry), whilst proteins in nature only exist in the hydrated state.
+
+The metal-organic framework (MOFs) and covalent organic framework databases are mentioned as well, considering this type of material has become a hot topic in materials science:
+
+ - https://mof.tech.northwestern.edu/
+ - https://mof-international.org/mof-structures/
+ - MOF Explorer within materialsproject.org
+
+This is not a comprehensive list, apprently existing many more sources of structural and property information for MOFs.
 
 ### AlphaFold
 
@@ -184,3 +192,4 @@ Moreover, the geometry files provided by the AlphaFold-EBI database [^2] are ver
 
 [^1]: https://www.vscentrum.be/alphafold
 [^2]: https://alphafold.ebi.ac.uk/
+[^3]: https://virtual-flow.org/
