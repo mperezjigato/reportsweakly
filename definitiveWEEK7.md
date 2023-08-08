@@ -175,7 +175,7 @@ Protein structural databases (http://www.rscb.org/ and https://alphafold.ebi.ac.
 
 ![](structure.png)
 
-There is an interesting aspect of the study of proteins from the point of view of the intern: The physics of hydrated proteins has one point in common with that of glasses, ie the dynamics of both is characterised by the "boson peak", which corresponds to low-frequency phonons in the Terahertz regime, and can be identified experimentally by Raman spectroscopy. Incidentally, the boson peak has been extensively documented in molecular dynamics studies for both proteins in water solutions and for glasses. It is worth mentioning as well the current interest in protein molecular topology and the large-scale computer-aided drug design project VirtualFlow [^3]. Needless to say, the crystalline state of proteins is a manmade enterprise (pharmaceutical industry), whilst proteins in nature only exist in the hydrated state.
+There is an interesting aspect of the study of proteins from the point of view of the intern: The physics of hydrated proteins has one point in common with that of glasses, ie the dynamics of both is characterised by the "boson peak", which corresponds to low-frequency phonons in the Terahertz regime, and can be identified experimentally by Raman spectroscopy. Incidentally, the boson peak has been extensively documented in molecular dynamics studies for both proteins in water solutions and for glasses. It is worth mentioning as well the current interest in protein molecular topology and the large-scale computer-aided drug design project VirtualFlow [^1]. Needless to say, the crystalline state of proteins is a manmade enterprise (pharmaceutical industry), whilst proteins in nature only exist in the hydrated state.
 
 The metal-organic framework (MOFs) and covalent organic framework databases are mentioned as well, considering this type of material has become a hot topic in materials science:
 
@@ -187,9 +187,9 @@ This is not a comprehensive list, apprently existing many more sources of struct
 
 ### AlphaFold
 
-As far as I can tell, the VSC/VIB training material [^1] on AlphaFold is the best of all the material that VSC provides for any software. It constitutes a really good entry point for anyone attempting to run AlphaFold on the GENIUS cluster. On the other hand, there exists an AlphaFold user group in Flanders.
-Moreover, the geometry files provided by the AlphaFold-EBI database [^2] are very helpful for computing protein structures and dynamics. Although I have no had time to run any specific case with AlphaFold, I have been looking at some literature and tools for geometry modification. It seems that one of the most common steps in this field goes through the preparation of a hydrated protein structure starting from a CIF file of the crystalline state of the pure protein (PACKMOL and VMD provide such tool). 
+As far as I can tell, the VSC/VIB training material [^2] on AlphaFold is the best of all the material that VSC provides for any software. It constitutes a really good entry point for anyone attempting to run AlphaFold on the GENIUS cluster. On the other hand, there exists an AlphaFold user group in Flanders.
+Moreover, the geometry files provided by the AlphaFold-EBI database [^3] are very helpful for computing protein structures and dynamics. Although I have no had time to run any specific case with AlphaFold, I have been looking at some literature and tools for geometry modification. It seems that one of the most common steps in this field goes through the preparation of a hydrated protein structure starting from a CIF file of the crystalline state of the pure protein (PACKMOL and VMD provide such tool). 
 
-[^1]: https://www.vscentrum.be/alphafold
-[^2]: https://alphafold.ebi.ac.uk/
-[^3]: https://virtual-flow.org/
+[^1]: https://virtual-flow.org/
+[^2]: https://www.vscentrum.be/alphafold
+[^3]: https://alphafold.ebi.ac.uk/
