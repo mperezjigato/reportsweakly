@@ -125,6 +125,14 @@ Direct inspection of the wall time data seems to indicate that the actual core c
 
 On the other hand, we can conclude that there exists a real problem, and it has to do with the accuracy of parallel LAMMPS calculations  whenever OpenMP is introduced. Our conclusion has been reconfirmed by carrying out pure OpenMP calculations on 2 cores and 1 core under the `-sf om` option. The as-provided example (elastic constants of Cu2O within the comb directory) is to be computed and the results submitted to the developers of LAMMPS, in order to look for a solution to our problem. It must be noted that the data above correspond to the same system, although after including a larger number of iterations as to record meaningul wall time values (the exact LAMMPS example has reconfirmed once more our conclusions!).
 
+NOTE: The swift response from the LAMMPS developers is shown below:
+
+> Did some investigation on this:
+
+>> this issue also exists on 2Aug2023 (but really you should check by yourself to see if the newest version already has the bugfix…);
+>> there are large difference on c_fx[1] c_fx[2] c_fx[3] c_fx[4] c_fx[5] c_fx[6] (and other directions) between mpi only and OpenMP runs, while the energies are exactly same. So my guess is that the issue lies in the compute stress/atom for comb/omp;
+>> there are some changes in the format of log.lammps so that the elastic.f90 does not work out-of-the-box anymore. To workaround this I replaced all " Step Lx" with “Step Lx” in log.lammps before feeding it into that program.
+
 ## Running an MPI weak scaling problem: OH adsorbed on graphene deposited on Cu2O(110)
 
 This is one of the LAMMPS provided examples, which has two-dimensional periodicity. The goal is to carry out weak scaling runs similarly to what I had described in the report of week 6 (LAMMPS benchmarks), but this time extending only the surface dimensions: The original 689-atom geometry is extended according to the 4x4, 8x8, 12x12, ... rule, system size (number of atoms) increasing exactly according to the number of MPI cores in the parallel calculation (16, 64, 144, ...). Results follow:
