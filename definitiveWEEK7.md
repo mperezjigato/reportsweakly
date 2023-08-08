@@ -188,8 +188,8 @@ This is not a comprehensive list, apprently existing many more sources of struct
 ### AlphaFold
 
 As far as I can tell, the VSC/VIB training material [^2] on AlphaFold is the best of all the material that VSC provides for any software. It constitutes a really good entry point for anyone attempting to run AlphaFold on the GENIUS cluster. On the other hand, there exists an AlphaFold user group in Flanders.
-Moreover, the geometry files provided by the AlphaFold-EBI database [^3] are very helpful for computing protein structures and dynamics. Although I have no had time to run any specific case with AlphaFold, I have been looking at some literature and tools for geometry modification. It seems that one of the most common steps in this field goes through the preparation of a hydrated protein structure starting from a CIF file of the crystalline state of the pure protein (PACKMOL and VMD provide such tool). 
+Moreover, the geometry files provided by the AlphaFold-EBI database [^3] are very helpful for computing protein structures and dynamics. Although I have not run any specific case with AlphaFold as yet, I have been looking at some literature and tools for geometry modification. It seems that one of the most common steps in this field goes through the preparation of a hydrated protein structure starting from a CIF file of the crystalline state of the pure protein (PACKMOL and VMD provide such tool). 
 
-[^1]: https://virtual-flow.org/
+[^1]: https://virtual-flow.org/ (the developers claim to have screened with the second version a few billion molecules)
 [^2]: https://www.vscentrum.be/alphafold
 [^3]: https://alphafold.ebi.ac.uk/
