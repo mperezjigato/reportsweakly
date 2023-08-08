@@ -177,13 +177,18 @@ Protein structural databases (http://www.rscb.org/ and https://alphafold.ebi.ac.
 
 There is an interesting aspect of the study of proteins from the point of view of the intern: The physics of hydrated proteins has one point in common with that of glasses, ie the dynamics of both is characterised by the "boson peak", which corresponds to low-frequency phonons in the Terahertz regime, and can be identified experimentally by Raman spectroscopy. Incidentally, the boson peak has been extensively documented in molecular dynamics studies for both proteins in water solutions and for glasses. It is worth mentioning as well the current interest in protein molecular topology and the large-scale computer-aided drug design project VirtualFlow [^1]. Needless to say, the crystalline state of proteins is a manmade enterprise (pharmaceutical industry), whilst proteins in nature only exist in the hydrated state.
 
-The metal-organic framework (MOFs) and covalent organic framework databases are mentioned as well, considering this type of material has become a hot topic in materials science:
+The metal-organic framework (MOFs) and covalent organic framework (COFs) databases are mentioned as well, considering this type of material has become a hot topic in materials science:
 
  - https://mof.tech.northwestern.edu/
  - https://mof-international.org/mof-structures/
  - MOF Explorer within materialsproject.org
 
-This is not a comprehensive list, apprently existing many more sources of structural and property information for MOFs.
+This is not a comprehensive list, apprently existing many more sources of structural and property information for MOFs/COFs.
+
+Topological materials constitute the last category we consider worth mentioning at this point. Two databases follow:
+
+ - TopoMat within materialscloud.org, and
+ - Topological Quantum Chemistry within https://www.cryst.ehu.es/
 
 ### AlphaFold
 
