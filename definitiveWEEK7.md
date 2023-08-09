@@ -162,12 +162,13 @@ A general purpose visualisation program called VMD already installed on the GENI
 ### Geometry databases and specific geometry file acquisition
 
 A list of specific websites with structural databases (and CIF files) for crystalline solids is given next:
- 1. The "materials explorer" within materialsproject.org.
+ 1. The "Materials Explorer" within materialsproject.org.
  1. The "Crystallography Open Database" (COD): crystallography.net.
  1. BILBAO CRYSTALLOGRAPHY SERVER: https://www.cryst.ehu.es/.
  1. The "Materials Cloud three-dimensional crystals database (MC3D)"
  within materialscloud.org.
  1. nomad-lab.eu
+ 1. Open Databases Integration for Materials Design (optimade.org) 
 
 Although no specific structural databases have been located for amorphous solids/glasses, the website of the SIMONS COLLABORATION FOR CRACKING THE GLASS PROBLEM (https://scglass.uchicago.edu/) provides an interesting entry point to the subject. A useful aspect of this source is given by sets of LAMMPS files for specific calculations within glass physics.
 
@@ -177,13 +178,13 @@ Protein structural databases (http://www.rscb.org/ and https://alphafold.ebi.ac.
 
 There is an interesting aspect of the study of proteins from the point of view of the intern: The physics of hydrated proteins has one point in common with that of glasses, ie the dynamics of both is characterised by the "boson peak", which corresponds to low-frequency phonons in the Terahertz regime, and can be identified experimentally by Raman spectroscopy. Incidentally, the boson peak has been extensively documented in molecular dynamics studies for both proteins in water solutions and for glasses. It is worth mentioning as well the current interest in protein molecular topology and the large-scale computer-aided drug design project VirtualFlow [^1]. Needless to say, the crystalline state of proteins is a manmade enterprise (pharmaceutical industry), whilst proteins in nature only exist in the hydrated state.
 
-The metal-organic framework (MOFs) and covalent organic framework (COFs) databases are mentioned as well, considering this type of material has become a hot topic in materials science (not a comprehensive list):
+The metal-organic framework (MOFs) and covalent organic framework (COFs) databases are enclosed below, considering this type of material has become a hot topic in materials science (not a comprehensive list):
 
  - https://mof.tech.northwestern.edu/
  - https://mof-international.org/mof-structures/
  - MOF Explorer within materialsproject.org
 
-Topological materials constitute the last category we consider worth mentioning at this point. Two databases follow:
+Topological materials constitute the last category we consider worth discussing at this point. Two databases follow:
 
  - TopoMat within materialscloud.org, and
  - Topological Quantum Chemistry within https://www.cryst.ehu.es/
