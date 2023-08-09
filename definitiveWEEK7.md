@@ -170,7 +170,7 @@ A list of specific websites with structural databases (and CIF files) for crysta
  1. nomad-lab.eu
  1. Open Databases Integration for Materials Design (optimade.org) 
  
-Plenty of CIF files describing the atomic structure of a range of metallic alloys have been located, although  none of them are shown now. In case a LAMMPS calculation is started on a specific alloy system, structural aspects will be discussed in this document.  
+Plenty of CIF files describing the atomic structure of a range of metallic alloys have been located, although  none of them are currently shown. In case a LAMMPS calculation gets started on a specific alloy system, structural aspects will be discussed in this document.  
 
 Although no specific structural databases have been located for amorphous solids/glasses, the website of the SIMONS COLLABORATION FOR CRACKING THE GLASS PROBLEM (https://scglass.uchicago.edu/) provides an interesting entry point to the subject. A useful aspect of this source is given by sets of LAMMPS files for specific calculations within glass physics.
 
