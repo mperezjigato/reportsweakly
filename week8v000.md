@@ -6,7 +6,7 @@ Work carried out with Quantum Espresso [^1] is described next, and the tables de
 
 Incidentally, it must be noted that all our CPU time on GENIUS has been consumed, and a new application for five million extra credits duly submitted [^2].
 
-### Quantumas Espresso calculations
+### Quantum Espresso calculations
 
 Two QE as-provided independent systems as well as a system with input files built from scratch, have been run: 
 
