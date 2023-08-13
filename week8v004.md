@@ -16,15 +16,15 @@ Two as-provided independent systems as well as a system with input files built f
 
 ### Specific CIF files and geometry visualisation 
 
-The Ag(16 10 9) surface structure [^3] is depicted below as well as the corresponding CIF file.
+The Ag(16 10 9) surface structure [^3] is depicted below.
 
  ![](Ag16109.png)
  
-On the other hand, the crystal structure and corresponding CIF file for the above topological material Ag2PdO2 is depicted next:
+On the other hand, the crystal structure for the above topological material Ag2PdO2 is depicted next:
 
  ![](Ag2PdO2.png)
 
-Finally, the modulated structure of the plagioclase feldspar CaxNa1-xAl1+xSi3-xO8 and its CIF file are both shown below [^4]. This represents the textbook example of a solid solution.
+Finally, the modulated structure of the plagioclase feldspar CaxNa1-xAl1+xSi3-xO8 is shown below [^4]. This represents the textbook example of a solid solution.
 
  ![](plagioclasefeldspar.png)
 
@@ -32,4 +32,3 @@ Finally, the modulated structure of the plagioclase feldspar CaxNa1-xAl1+xSi3-xO
 [^2]: https://admin.kuleuven.be/icts/onderzoek/hpc/extra-project-credits
 [^3]: Both CIF file and atomic structure image of Ag(16 10 9) have been provided by Dr Stephen J Jenkins.
 [^4]: It has been downloaded from The Bilbao Incommensurate Crystal Structure Database at https://www.cryst.ehu.es/
-[^5]: EKH Salje, "Phase transitions in ferroelastic and co-elastic crystals", Student edition, 1993, Cambridge University Press
