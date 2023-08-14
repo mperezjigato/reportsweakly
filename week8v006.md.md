@@ -97,7 +97,7 @@ On the other hand, the crystal structure for the above topological material Ag2P
 
  ![](Ag2PdO2.png)
 
-Finally, the modulated structure of the plagioclase feldspar CaxNa1-xAl1+xSi3-xO8 is shown below [^4]. This represents the textbook example of a solid solution.
+Finally, the modulated structure of the plagioclase feldspar CaxNa1-xAl1+xSi3-xO8 solid solution is shown below [^4]. This represents the textbook example of a solid solution.
 
  ![](plagioclasefeldspar.png)
 
