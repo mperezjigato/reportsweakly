@@ -162,14 +162,18 @@ A general purpose visualisation program called VMD already installed on the GENI
 ### Geometry databases and specific geometry file acquisition
 
 A list of specific websites with structural databases (and CIF files) for crystalline solids is given next:
- 1. The "Materials Explorer" within materialsproject.org.
+
+ 1. The "materials explorer" within materialsproject.org.
  1. The "Crystallography Open Database" (COD): crystallography.net.
  1. BILBAO CRYSTALLOGRAPHY SERVER: https://www.cryst.ehu.es/.
  1. The "Materials Cloud three-dimensional crystals database (MC3D)"
  within materialscloud.org.
- 1. nomad-lab.eu
- 1. Open Databases Integration for Materials Design (optimade.org) 
- 
+ 1. nomad-lab.eu.
+ 1. ICSD (Inorganic Crystal Structure Database): https://icsd.fiz-karlsruhe.de/
+ 1. OPTIMADE within the Open Quantum Materials Database: https://oqmd.org/
+ 1. The AFLOW standard encyclopedia of crystallographic prototypes: http://aflowlib.org/prototype-encyclopedia/
+ 1. MATERIALS PLATFORM FOR DATA SCIENCE (MPDS): https://mpds.io/
+
 Plenty of CIF files describing the atomic structure of a range of metallic alloys have been located, although  none of them are currently shown. In case a LAMMPS calculation gets started on a specific alloy system, structural aspects will be discussed in this document.  
 
 Although no specific structural databases have been located for amorphous solids/glasses, the website of the SIMONS COLLABORATION FOR CRACKING THE GLASS PROBLEM (https://scglass.uchicago.edu/) provides an interesting entry point to the subject. A useful aspect of this source is given by sets of LAMMPS files for specific calculations within glass physics.
