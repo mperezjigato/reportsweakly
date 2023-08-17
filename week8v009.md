@@ -28,6 +28,10 @@ Calculations on a Gold surface with a unit cell of 112 atoms and on an Iridium c
 
 Both job submission file and main input file are shown below for both cases, the Gold surface and the Iridum carbide supercell. It should be noted that extra parallelisation (mpirun) parameters are required for very large core numbers (1152), ie those corresponding to k-point (4) and to Davidson diagonalisation (16) parallelisation, whilst they do not seem to be necessary for small number of cores (in fact, we have tested it, and the calculation is slower for small core numbers, when using the extra parallelisation parameters).
 
+#### QE test suite
+
+At this point, just independent calculations selected from the whole suite are reported.
+
 ## Computational Chemistry - Collection of specific CIF files, atomistic geometry visualisation and geometry conversion tools. 
 
 The visualisation of atomistic geometries of materials and molecules has become crucial in simulations, therefore its importance in research and in supercomputing applications must be stressed. Materials simulation work requires the manipulation of geometry files (CIF, PDB, XSF, etc), making essential to visualise their geometry during the course of the simulations. The above PdAg2O2 QE calculations provide a good example, since conversions between the conventional cell (shown below) and the primitive cell, require the visualisation of both geometries. On the other hand, comparison with reference outputs also require the geometry visualisation stage (the software XCRYSDEN can visualise atomistic geometries from QE output files directly).
