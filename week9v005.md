@@ -44,6 +44,7 @@ Following up the same order appearing in the computationalchemistry repository (
 
  - GaAs PWscf calculation under PAW,
  - MPI SiH4 -molecule in a box- PWscf calculation under Hamann's ONCV pseudopotentials: *mpiQEsih4.tar.gz*,
+     - Job submission script:
 ```bash
  #!/bin/bash
 
@@ -61,6 +62,39 @@ module load QuantumESPRESSO/6.8-intel-2021a
 
 mpirun pw.x < silane.in > scf.out
 ```
+    - Main input file:
+´´´
+&control
+calculation  = 'scf'
+restart_mode = 'from_scratch'
+pseudo_dir   = './'
+outdir       = './'
+prefix       = 'silane'
+wf_collect   = .TRUE.
+/
+&system
+ibrav           = 1
+celldm(1)       = 20
+nat             = 5
+ntyp            = 2
+ecutwfc         = 25.0
+nbnd            = 10
+assume_isolated ='mp'
+/
+&electrons
+diago_full_acc = .TRUE.
+/
+ATOMIC_SPECIES
+Si 28.0855  Si_ONCV_PBE-1.2.upf
+H  1.00794   H_ONCV_PBE-1.2.upf
+ATOMIC_POSITIONS bohr
+Si      10.000000   10.000000  10.000000
+H       11.614581   11.614581  11.614581
+H        8.385418    8.385418  11.614581
+H        8.385418   11.614581   8.385418
+H       11.614581    8.385418   8.385418
+K_POINTS {gamma}
+´´´ 
  - *Immm* Ag2PdO2 PWscf calculation under norm-conserving pseudopotentials,
  - 112 atom-cell Gold surface PWscf calcultion, from the PRACE benchmark
  - 443-atom cell Iridium carbide, from the PRACE benchmark
