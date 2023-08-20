@@ -73,5 +73,12 @@ This section constitutes a work plan in itself, since none of those codes have b
 
 The corresponding PDB file can be located in the geometryCIF_PDB_XSF_FASTA ("k-cl-sol.pdb") repository.
 
+Moreover, the list of softwware would not be complete if we did not include all the packages installed under conda in a series of virtual envirnoments, on the DSI guest2 laptop:
+
+- "geniushpc": ASE, GPAW, LAMMPS, QE, CP2K, 
+- "abinitbigdft": ABINIT, BIGDFT and PYTEST;
+- "nbsjarvistools";
+- "pkinetrareev"
+
 
 [^1]: https://github.com/GilsonLabUCSD/pAPRika/blob/master/docs/index.rst
