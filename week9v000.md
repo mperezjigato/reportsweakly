@@ -27,4 +27,4 @@ Following up the same order appearing in the computationalchemistry repository (
 
 ## HPC calculations: Installation and first runs on other software
 
-This section constitutes a work plan in itself, since none of the codes have been run as yet. We are currently gathering information, particulary regarding input syntax and example input files. 
+This section constitutes a work plan in itself, since none of the codes have been run as yet. We are currently gathering information, particulary regarding input file syntax and example input files. 
