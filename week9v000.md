@@ -42,6 +42,12 @@ Following up the same order appearing in the computationalchemistry repository (
 
 ### QUANTUM-ESPRESSO
 
+ - GaAs PWscf calculation under PAW,
+ - SiH4 -molecule in a box- PWscf calculation under norm-conserving pseudopotentials,
+ - *Immm* Ag2PdO2 PWscf calculation under norm-conserving pseudopotentials,
+ - Gold surface
+ - Iridium carbine
+
 ## HPC calculations: Installation and first runs with GROMACS, PLUMED, ALPHAFOLD, OPENMM and OPENPATHSAMPLING
 
 This section constitutes a work plan in itself, since none of those codes have been run as yet. We are currently gathering information, particulary regarding input file syntax and example input files. The PDB file correspoinding to the structure below (two molecules forming a complex in a KCL (saline) water solution) provides a good sample to be run with most codes, except for AlphaFold (not a protein). The example has been taken from the PAPRIKA distribution [^1]. See below:
