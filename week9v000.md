@@ -48,6 +48,6 @@ This section constitutes a work plan in itself, since none of those codes have b
 
 ![](complexationinwater.png)
 
-The corresponding PDB file can be located in the geometryCIF_PDB_XSF_FASTA ("k-cl-sol.pdb").
+The corresponding PDB file can be located in the geometryCIF_PDB_XSF_FASTA ("k-cl-sol.pdb") repository.
 
 [^1]: 
