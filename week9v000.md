@@ -11,4 +11,4 @@ At this point, and considering that we do not count with CPU time at Genius, it 
  - OPENMM
  - OPENPLATHSAMPLING
  
- The last two codes are not separately implemented, rather, they take part in the distribution of other software. Firstly, PLUMED is a free-energy calculation code that contains OPENPATHSAMPLING. Secondly, AlpaFold is a protein structure determination sofware that uses OPENMM as force-engine, and therefore, OpenMM is part of its distribution.
+ The last two codes are not separately implemented. Rather, they take part in the distribution of other software. Firstly, PLUMED is a free-energy calculation code that makes use of OPENPATHSAMPLING. Secondly, AlpaFold is a protein structure determination sofware that uses OPENMM as force-engine, and therefore, OpenMM is part of its distribution.
