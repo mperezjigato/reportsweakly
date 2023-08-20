@@ -43,7 +43,7 @@ Following up the same order appearing in the computationalchemistry repository (
 ### QUANTUM-ESPRESSO
 
  - GaAs PWscf calculation under PAW,
- - SiH4 -molecule in a box- PWscf calculation under Hamann's ONCV pseudopotentials: *mpiQEsih4.tar.gz*,
+ - MPI SiH4 -molecule in a box- PWscf calculation under Hamann's ONCV pseudopotentials: *mpiQEsih4.tar.gz*,
 ```bash
  #!/bin/bash
 
