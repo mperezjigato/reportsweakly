@@ -7,7 +7,7 @@ At this point, and considering that we do not count with CPU time at Genius, it 
 
  - GROMACS
  - PLUMED
- - AlphaFold (not implemented by the intern, simply run on Genius, if possible)
+ - AlphaFold (not implemented by the intern, simply run on Genius, when possible)
  - OPENMM
  - OPENPLATHSAMPLING
  
