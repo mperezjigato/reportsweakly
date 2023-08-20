@@ -11,7 +11,7 @@ At this point, and considering that we do not count with CPU time at Genius, it 
  - OPENMM
  - OPENPLATHSAMPLING
  
- The last two codes are not separately implemented. Rather, they take part in the distribution of other software. Firstly, PLUMED is a free-energy calculation code that makes use of OPENPATHSAMPLING. Secondly, AlpaFold is a protein structure determination sofware that uses OPENMM as force-engine, and therefore, OpenMM is part of its distribution.
+ The last two codes are not separately installed on Genius. Rather, they take part in the distribution of other software. Firstly, PLUMED is a free-energy calculation code that makes use of OPENPATHSAMPLING. Secondly, AlpaFold is a protein structure determination sofware that uses OPENMM as force-engine, and therefore, OpenMM is part of its distribution. Regarding the laptop installations of OPENMM and OPENPATHSAMPLING, explicit installation have been carried out.
 
 ## HPC calculations: Inputs and outputs - Development of supercomputing training material regarding Ab-Initio/MD calculations
 
@@ -50,4 +50,5 @@ This section constitutes a work plan in itself, since none of those codes have b
 
 The corresponding PDB file can be located in the geometryCIF_PDB_XSF_FASTA ("k-cl-sol.pdb") repository.
 
-[^1]: 
+
+[^1]: https://github.com/GilsonLabUCSD/pAPRika/blob/master/docs/index.rst
