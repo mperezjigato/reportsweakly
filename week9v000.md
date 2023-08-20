@@ -12,3 +12,15 @@ At this point, and considering that we do not count with CPU time at Genius, it 
  - OPENPLATHSAMPLING
  
  The last two codes are not separately implemented. Rather, they take part in the distribution of other software. Firstly, PLUMED is a free-energy calculation code that makes use of OPENPATHSAMPLING. Secondly, AlpaFold is a protein structure determination sofware that uses OPENMM as force-engine, and therefore, OpenMM is part of its distribution.
+
+## HPC calcultions: Inputs and outputs - Development of supercomputing training material regarding Ab-Initio/MD calculations
+
+Tollowing up the same order appearing in the computationalchemistry repository (README.md), inputs and output files are shown below
+
+### ABINIT
+
+### ASE
+
+### LAMMPS
+
+### QUANTUM-ESPRESSO
