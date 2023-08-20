@@ -42,6 +42,6 @@ Following up the same order appearing in the computationalchemistry repository (
 
 ### QUANTUM-ESPRESSO
 
-## HPC calculations: Installation and first runs on other software
+## HPC calculations: Installation and first runs with GROMACS, PLUMED, ALPHAFOLD, OPENMM and OPENPATHSAMPLING
 
 This section constitutes a work plan in itself, since none of the codes have been run as yet. We are currently gathering information, particulary regarding input file syntax and example input files. 
