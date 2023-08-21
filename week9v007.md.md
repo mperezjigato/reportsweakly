@@ -1,21 +1,22 @@
 
 # Internship - Week 9 - Summary
 
-At this point, and considering that we do not count with CPU time at Genius, it seems as a good idea trying to gather input and output files corresponding to all the calculations carried out so far with the Ab-Initio/MD software. The list coincides with the tar files uploaded to the "computationalchemistry" repository, although without large pseudopotential (nor wavefunction) files. 
+At this point, and considering that we do not count with CPU time at Genius, it seems like a good idea trying to gather input and output files corresponding to all the calculations carried out so far with the Ab-Initio/MD software. On the one hand, the list of tar files uploaded to the "computationalchemistry" repository is completed. On the other, job submission scripts and input files are exhibited in this document. For cases of sequential calculations or parallel calculations on the laptop, no submission script is shown (only the main input file).  
 
  On the other hand, installation work (on DSI guest2 laptop), is summarised below, as well as work on the first runs with the software below:
 
  - GROMACS
  - PLUMED
- - AlphaFold (not implemented by the intern, simply run on Genius, when possible)
+ - AlphaFold (not implemented by the intern, simply run on Genius, when/if possible)
  - OPENMM
  - OPENPLATHSAMPLING
  
- The last two codes are not separately installed on Genius. Rather, they take part in the distribution of other software. Firstly, PLUMED is a free-energy calculation code that makes use of OPENPATHSAMPLING. Secondly, AlpaFold is a protein structure determination sofware that uses OPENMM as force-engine, and therefore, OpenMM is part of its distribution. Regarding the laptop installations of OPENMM and OPENPATHSAMPLING, explicit installation have been carried out.
+The last two codes are not separately installed on Genius. Rather, they take part in the distribution of other software. Firstly, PLUMED is a free-energy calculation code that makes use of OPENPATHSAMPLING. Secondly, AlpaFold is a protein structure determination sofware that uses OPENMM as force-engine, and therefore, OpenMM is part of its distribution. Regarding the laptop installations of OPENMM and OPENPATHSAMPLING, explicit installation have been carried out.
+After looking at the AlphaFold documentation, it local installation would require a huge amount of storage space, which is not available on the laptop, therefore, no attempt of installing AlphaFold is made.
 
 ## HPC calculations: Inputs and outputs - Development of supercomputing training material regarding Ab-Initio/MD calculations
 
-Following up the same order appearing in the computationalchemistry repository (README.md), input and output files are shown below
+Following up the same order appearing in the computationalchemistry repository (README.md), job submission scripts and input files are shown below.
 
 ### ABINIT
 
@@ -44,7 +45,6 @@ Following up the same order appearing in the computationalchemistry repository (
 
  - GaAs PWscf calculation under PAW,
  - MPI SiH4 -molecule in a box- PWscf calculation under Hamann's ONCV pseudopotentials: *mpiQEsih4.tar.gz*,
-   - Job submission script:
 ```bash
  #!/bin/bash
 
@@ -62,7 +62,6 @@ module load QuantumESPRESSO/6.8-intel-2021a
 
 mpirun pw.x < silane.in > scf.out
 ```
-   - Main input file:
 ```
 &control
 calculation  = 'scf'
@@ -114,5 +113,6 @@ Moreover, the list of softwware would not be complete if we did not include all 
 - "nbsjarvistools": GRIP, JupyterLab, JARVIS-TOOLS, PYIRON, LAMMPS;
 - "pkinetrareev": PyEMMA, OPENMM, OPENPATHSAMPLING, GROMACS, PLUMED
 
+The ABINIT installation has one purpose: To see whether version 9.8 has already modified the test suite. 
 
 [^1]: https://github.com/GilsonLabUCSD/pAPRika/blob/master/docs/index.rst
