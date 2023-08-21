@@ -74,4 +74,4 @@ In this case, the search/replace operation is carried out linewise, via a nested
 
 [^1]: ("2-post-analysis"): A Lennard-Jones fluid simple MD calculation. See the material provided with the tutorial "LAMMPS Course for Intermediate Users" https://epcced.github.io/archer2-advanced-use-of-lammps/
 
-[^2]: Solid solutions of quinary alloys are currently cosidered the best candidates for high-entropy alloys.
+[^2]: Single-phase solid solutions of quinary alloys are currently considered one of the best candidates for high-entropy alloys.
