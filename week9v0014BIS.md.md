@@ -1299,7 +1299,7 @@ This section constitutes a work plan in itself, since none of those codes have b
 
 ![](complexationinwater.png)
 
-Moreover, the list of softwware would not be complete if we did not include all the packages installed under conda (WSL Ubuntu 22.04 LTS) in a series of virtual environments, on the DSI guest2 laptop:
+Moreover, the list of software would not be complete if we did not include all the packages installed under conda (WSL Ubuntu 22.04 LTS) in a series of virtual environments, on the DSI guest2 laptop:
 
 - "geniushpc": ASE, GPAW, LAMMPS, QE, CP2K, NWCHEM
 - "abinitbigdft": ABINIT, BIGDFT and PYTEST;
