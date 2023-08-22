@@ -1295,19 +1295,18 @@ Ir   0.92592592593   0.85185185185   0.07854140049
 
 ## HPC calculations: Installation and first runs with GROMACS, PLUMED, ALPHAFOLD, OPENMM and OPENPATHSAMPLING
 
-This section constitutes a work plan in itself, since none of those codes have been run as yet. We are currently gathering information, particulary regarding input file syntax and example input files. The PDB file correspoinding to the structure below (two molecules forming a complex in a KCL (saline) water solution) provides a good sample to be run with most codes, except for AlphaFold (not a protein). The example has been taken from the PAPRIKA distribution [^1]. See below:
+This section constitutes a work plan in itself, since none of those codes have been run as yet. We are currently gathering information, particulary regarding input file syntax and generic input files to be used as sample cases. The PDB file ("geometryCIF_PDB_XSF_FASTA" ("k-cl-sol.pdb") repository) corresponding to the structure below (two molecules forming a complex in a KCL (saline) water solution) provides a good sample to be run with most codes, except for AlphaFold (not a protein). The example has been taken from the PAPRIKA distribution [^1]. See below:
 
 ![](complexationinwater.png)
 
-The corresponding PDB file can be located in the geometryCIF_PDB_XSF_FASTA ("k-cl-sol.pdb") repository.
-
 Moreover, the list of softwware would not be complete if we did not include all the packages installed under conda (WSL Ubuntu 22.04 LTS) in a series of virtual environments, on the DSI guest2 laptop:
 
-- "geniushpc": ASE, GPAW, LAMMPS, QE, CP2K, NWCHEM 
+- "geniushpc": ASE, GPAW, LAMMPS, QE, CP2K, NWCHEM
 - "abinitbigdft": ABINIT, BIGDFT and PYTEST;
 - "nbsjarvistools": GRIP, JupyterLab, JARVIS-TOOLS, PYIRON, LAMMPS;
 - "pkinetrareev": PyEMMA, OPENMM, OPENPATHSAMPLING, GROMACS, PLUMED
 
-The ABINIT installation has one purpose: To see whether version 9.8 has already modified the test suite. 
+The ABINIT installation has one purpose: To see whether version 9.8 has already the new test suite implementation. One final point to be noted is that the presence of generic geometry files for solvated molecules (format PDB, CIF, etc) will be useful for running the ENVIRON solvation module within quantum-espresso [^2].
 
 [^1]: https://github.com/GilsonLabUCSD/pAPRika/blob/master/docs/index.rst
+[^2]: http://www.quantum-environ.org/
