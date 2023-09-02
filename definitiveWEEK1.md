@@ -1,6 +1,6 @@
 # Internship - Week 1 : Summary 
 
-This document describes the proposed tasks and the work carried out so far during the first week of internship at the University of Hasselt, as well as the training sessions attended by the intern.
+This document describes the proposed tasks and the work carried out during the first week of internship at the University of Hasselt, as well as the training sessions attended by the intern.
 
 ## Tasks and work
 
