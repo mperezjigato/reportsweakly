@@ -23,7 +23,7 @@ In relation to the second category, the AlphaFold software is currenly installed
 
 The ABINIT code, on the one hand has been run using the slurm scheduler for small test systems on 18 cores, and on a single node (thin node - CPU). These jobs have been completed successfully in less than a minute of wall time. Furthermore, the intern has tried to run the full test bunch provided by ABINIT, and accompanying the full easybuild implementation (2018a). The combined test system has failed, giving a python error. Further work remains to be carried out on ABINIT.
 
-The VASP code cannot be accessed. This has been actually tested my installing the appropriate 2018a module: Certainly, being a commercial code, VASP requires a licence, and GJB is to set up access to one of the existing licences. Regarding Quantum Espresso and the Wannier90 codes, there has been no progress up to now. One important point related to the latter is that the Wannier90 existing implementation is an outdated one. The intern requires version 3 in order to carry out current developments. The implementation of the various first principles codes in combination with the ELPA software, constitutest another request to be submitted to VSC.
+The VASP code cannot be accessed. This has been actually tested by installing the appropriate 2018a module: Certainly, being a commercial code, VASP requires a licence, and GJB is to set up access to one of the existing licences. Regarding Quantum Espresso and the Wannier90 codes, there has been no progress up to now. One important point related to the latter is that the Wannier90 existing implementation is an outdated one. The intern requires version 3 in order to carry out current developments. The implementation of the various first principles codes in combination with the ELPA software, constitutest another request to be submitted to VSC.
 
 The LAMMPS code is to be tested shortly, including both the CPU and the GPU versions. The ASE and AlphaFold codes remain to be tested as well. 
 
@@ -37,5 +37,4 @@ The intern has created a GITHUB/GIT account and uploaded an SSH public key. He h
 
 ## Training sessions
 
-On June 22, 2023 the intern attended a session provided by GJB to students of the Data Science Institute describing the HPC system GENIUS at VSC-KU Leuven-ICTS.
-On the other hand, a separate training session was provided on the same day by GJB regarding the GITHUB/GIT version control system. Specific examples were built and provided by GJB for the intern to experiment on. 
+On June 22, 2023 the intern attended a session provided by GJB to students of the Data Science Institute describing the HPC system GENIUS at VSC-KU Leuven-ICTS. On the other hand, a separate training session was provided on the same day by GJB regarding the GITHUB/GIT version control system. Specific examples were built and provided by GJB for the intern to experiment on. 
