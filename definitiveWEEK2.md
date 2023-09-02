@@ -1,7 +1,7 @@
 
-# Week 2: REPORT
+# Internship - week 2 - summary
 
-Since no specific tasks have been given this week, the intern has devoted his efforts towards the completion of tasks 3, 4 and 5, all set out during week 1. Whilst task 3 involves a long term objective (Ab Initio/MD codes) and is therefore **work in progress**, both tasks 4 (Markdown) and 5 (GitHub/Git) have been **completed**. A full description of the work carried out for all three tasks follows next. 
+Since no specific tasks have been given this week, the intern has devoted his efforts towards the completion of tasks 3, 4 and 5, all set out during week 1. Whilst task 3 involves a long term objective (Ab Initio/MD codes) and is therefore **work in progress**, both tasks 4 (Markdown) and 5 (GitHub/Git) have been **completed**. A full description of the work carried out in relation to those three tasks follows. 
 
 ## Teaching material for Ab Initio and for Molecular Dynamics codes
 
