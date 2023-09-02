@@ -76,7 +76,7 @@ do
 	echo $ref > $fbp
 done < $lf
 ```
-Although the script does not include as yet any of the templating options, it is encouraging to note that GJB has already spotted one specific error as well as a couple of points that could be improved. The modified script is: 
+Although the script does not include as yet any of the templating options, it is encouraging to note that GJB has already spotted one specific error as well as a couple of points that could be improved. The modified script is to be shown at the summary of next week.
 
 ## Templating
 
