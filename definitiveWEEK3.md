@@ -1,4 +1,4 @@
-# Internship - Week 3 - Summary
+# Internship - week 3 - summary
 
 Efforts have been devoted to the completion of task 3. As a long-term project, a strategy for task 3 has to be devised alongside giving strides towards the actual practical HPC computational runs of the involved codes. Progress on task 3 comprising HPC runs of the existing computational chemistry codes has met the added benefit of the intern acquiring `BASH shell` scripting skills as well as of learning the concept of templating.
 
