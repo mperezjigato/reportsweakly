@@ -86,7 +86,7 @@ NEV1='xFORM'
 NEV2='xDATAP'
 sed -e "s#${OLV1}#${NEV1}#g" -e "s#${OLV2}#${NEV2}#g" inback.txt > outsedM4.txt
 ```
-The above script is currently used by the intern to modify *LAMMPS* inputs for production calculations. In order to continue with the exercise, we decided to test other `BASH shell` scripts that go as far as producing templates. See below a script that does the same thing as the `sed` script above, although using arrays:
+The above script is currently used by the intern to modify *LAMMPS* inputs for production calculations. In order to continue with the exercise, we decided to test other `BASH shell` scripts that go as far as producing templates. See below a script that does the same thing (not quite!) as the `sed` script above, although using arrays:
 ```bash
 #!/usr/bin/env bash
 nma=1
