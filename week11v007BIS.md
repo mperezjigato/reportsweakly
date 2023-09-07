@@ -86,7 +86,7 @@ The GPAW scf calculations fail for NPAR above 11. After simple inspection of the
 
 ### *HPC parameterisation*: An exercise regarding automatisation for ASE-GAPW calculations including BASH scripting and ATOOLS job submission
 
-A more professional approach to the above ASE-GPAW calculation is described next. It actually constitutes a unique chance to try not only your BASH capabilities and learn the ATOOLS scheduler control system, but the following will be brashed off:
+A more professional approach to the above ASE-GPAW calculation is described next. It actually constitutes a unique chance to try not only your BASH capabilities and learn the ATOOLS scheduler control system, but the following will be brushed off:
 
   - Python: ASE and GPAW both require python scripts
   - M4: In order to HPC-parameterise the calculation, several python variables need search/replacement
