@@ -27,6 +27,6 @@
     <td><img src="image8.png"></td>"
     <td><img src="image10.png"></td>"
     <td><img src="image12.png"></td>"
-    <td><></td>"
+    <td></td>"
   </tr>
 </table>
