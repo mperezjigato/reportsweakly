@@ -9,7 +9,7 @@
  
  On the other hand, a couple of examples of atomistic model build-up using `atomsk` are shown below for extended defects in materials science,
  
-## Ag Nanostructures - ASE (EMT) geometry optimisation, GPAW (LCAO) self-consistent field electronic structure and GPAW electronic density of states calculations (*count.tar.gz* and *nanoparticlessilver.tar.gz* uploaded to the GitHub repository "computationalchemistry")
+## Ag Nanostructures - ASE (EMT) geometry optimisation, GPAW (LCAO) self-consistent field electronic structure and GPAW electronic density of states calculations (*count.tar.gz* and *nanoparticlessilver.tar.gz*)
 
 One of the valuable aspects of ASE corresponds to its capability to set up atomistic geometry models from scratch. The "ase.cluster.octahedron" module allows the creation of atomistic geometries for this type of nanostructures, including both octahedra and truncated octahedra. The FCC Ag example from the ASE tutorial material has been chosen to be run (based on `ase.cluster.octahedra`). It includes (a) the generation of atomistic geometries and the ASE (EMT) optimisation; (b) the GPAW computation of the self-consistent electronic structure for the optimal cluster geometry, and (c) a GPAW electronic density of states calculation starting from the GPAW electronically converged system. All three steps are (MPI) run on Genius, for nanostructures of increasing size and a full weak-scaling study is presented. Incidentally, GPAW electronic structure calculations can be run using three different modes: (LCAO) atom-centered basis functions, real-space grids/multigrids and planewaves. This test has been run exclusively under (LCAO) atom-centered basis functions.
 
