@@ -3,8 +3,13 @@
 
 <table>
   <tr>
-    <th>Column 1</th>
-    <th>Column 2</th>
+    <th>NP=5</th>
+    <th>NP=6</th>
+    <th>NP=7</th>
+    <th>NP=8</th>
+    <th>NP=9</th>
+    <th>NP=10</th>
+    <th>NP=11</th>
   </tr>
   <tr>
     <td><img src="geopohNP5.png" alt="geopohNP5"></td>
@@ -21,6 +26,7 @@
     <td><img src="dospohNP7.png" alt="dospohNP7"></td>
     <td><img src="dospohNP8.png" alt="dospohNP8"></td>
     <td><img src="dospohNP9.png" alt="dospohNP9"></td>
-    <td><img src="dospohNP10.png" alt="dospohNP10"></td>        
+    <td><img src="dospohNP10.png" alt="dospohNP10"></td>  
+    <td></td>
     </tr>
 </table>
