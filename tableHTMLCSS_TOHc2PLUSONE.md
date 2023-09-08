@@ -1,15 +1,15 @@
 
-# ATOMISTIC GEOMETRIES AND ELECTRONIC DENSITY OF STATES - Ag octahedral nanoparticles
+# ATOMISTIC GEOMETRIES AND ELECTRONIC DENSITY OF STATES - Ag truncated-octahedra
 
 <table>
   <tr>
-    <th>NP=5</th>
-    <th>NP=6</th>
-    <th>NP=7</th>
-    <th>NP=8</th>
-    <th>NP=9</th>
-    <th>NP=10</th>
-    <th>NP=11</th>
+    <th>NP=5 / NT=2</th>
+    <th>NP=6 / NT=2</th>
+    <th>NP=7 / NT=2</th>
+    <th>NP=8 / NT=2</th>
+    <th>NP=9 / NT=2</th>
+    <th>NP=10/ NT=2</th>
+    <th>NP=11 / NT=2</th>
   </tr>
   <tr>
     <td><img src="geotohNP5NT2.png" alt="geotohNP5NT2"></td>
