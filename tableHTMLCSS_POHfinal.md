@@ -1,5 +1,5 @@
 
-# ATOMISTIC GEOMETRIES AND ELECTRONIC DENSITY OF STATES - Ag octahedra
+# Ag octahedra
 
 <table>
   <tr>
