@@ -385,7 +385,7 @@ from ase.io import write, read
 atoms_123456789 = Octahedron('Ag', xNP)
 write(atoms_123456789.xyz', atoms_123456789)
 ```
-No doubt this is an impractical route to search/replace. As a matter of fact, GJB has decided to write a python script (gjb.py) that does the job in no time (Python to modify Python!):
+No doubt this is an impractical route to search/replace. As a matter of fact, GJB has decided to write a Python script (gjb.py) that does the job in no time (Python to modify Python!):
 ```python
 #!/usr/bin/env python
 
@@ -394,11 +394,9 @@ from ase.cluster import Octahedron
 from ase.io import write
 
 def main():
-    arg_parser = argparse.ArgumentParser(description='Create geometry input file
-')
+    arg_parser = argparse.ArgumentParser(description='Oh geometry file')
     arg_parser.add_argument('file', help='file name to generate')
-    arg_parser.add_argument('--NP', type=int, default=1, help='number of process
-ors')
+    arg_parser.add_argument('--NP', type=int, default=1, help='main Oh size parameter')
     options = arg_parser.parse_args()
 
     write(options.file, Octahedron('Ag', options.NP))
