@@ -512,8 +512,7 @@ world.barrier()
 if rank == 0:
 print "Init completed"
 ```
-One of the above sets (that with NP=11/c=2) will be repeated, this time under hybrid parallelisation and using 43 as the number of MPI processes.
-Moreover, it is key to note that in order to fully test the hybrid mode, the finite-difference real-space discretisation mode of GPAW must be used. Both the latter and LCAO will be tested. 
+One of the above ASE/GPAW calculation sets (that with NP=11/c=2) will be repeated, this time under hybrid parallelisation and using 43 as the number of MPI processes. Moreover, it is key to note that in order to fully test the hybrid mode, the finite-difference real-space discretisation mode of GPAW must be used. Both the latter and LCAO will be tested. 
 
 On the other hand, the exercise is not complete unless the linear-response TDDFT method is also run, although a smaller system is chosen this time: NP=5/NT=2 with 55 Ag atoms.
 
