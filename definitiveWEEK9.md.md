@@ -1,9 +1,9 @@
 
 # Internship - Week 9 - Summary
 
-At this point, and considering that I do not count with CPU time at Genius, it seems like a good idea trying to gather input and output files corresponding to all the calculations carried out so far with the Ab-Initio/MD software. On the one hand, the list of tar files uploaded to the "computationalchemistry" repository is completed. On the other, job submission scripts and input files are exhibited in this document. For cases of sequential calculations or parallel calculations on the laptop, no submission script is shown (only the main input file).  
+At this point, and considering that the CPU time at Genius has already been consumed, it seems like a good idea trying to gather input and output files corresponding to all the calculations carried out so far with the Ab-Initio/MD software. On the one hand, the list of tar files uploaded to the "computationalchemistry" repository is completed (README.md). On the other, job submission scripts and input files are exhibited in this document. Regading laptop calculations (either serial or MPI), no submission script is shown, only the main input file.  
 
- On the other hand, installation work (on DSI guest2 laptop), is summarised below, as well as work on the first runs with the software below:
+ On the other hand, installation work (on DSI guest2 laptop), is summarised below for:
 
  - GROMACS
  - PLUMED
@@ -11,7 +11,8 @@ At this point, and considering that I do not count with CPU time at Genius, it s
  - OPENMM
  - OPENPLATHSAMPLING
  
-The last two codes are not separately installed on Genius. Actually, on the HPC version, they take part in the distribution of other software. Firstly, PLUMED is a free-energy calculation code that makes use of OPENPATHSAMPLING. Secondly, AlphaFold is a protein structure determination sofware that uses OPENMM as its force-engine, and therefore, OpenMM is part of its distribution. Regarding the laptop installations of OPENMM and OPENPATHSAMPLING, explicit installation have been carried out. After looking at the AlphaFold documentation, and seeing that its local installation would require a huge amount of storage space (about 3 TB for the database), not available on the laptop, no attempt of installing AlphaFold is made.
+The last two codes are not separately installed on Genius. Actually, on the HPC version, they take part in the distribution of other software. Firstly, PLUMED is a (metadynamics) free-energy calculation code that could make use of OPENPATHSAMPLING. Secondly, AlphaFold is a protein structure determination sofware that uses OPENMM as its force-engine, and therefore, the latter is part of its distribution. Regarding the laptop installations of OPENMM and OPENPATHSAMPLING, explicit installation have been carried out. After looking at the AlphaFold documentation, and seeing that its local installation would require a huge amount of storage space (about 3 TB for the database), not available on the laptop, no attempt of installing AlphaFold is made.
+ None of the mentioned codes have been run as yet.
 
 ## HPC calculations: tar files uploaded and inputs/job submission scripts - Development of supercomputing training material regarding Ab-Initio/MD calculations
 
@@ -3488,10 +3489,11 @@ Ir   0.92592592593   0.85185185185   0.07854140049
  Ir  0.88888888889   0.66666666667   0.15570700293   0  0  0
  Ir  0.88888888889   0.77777777778   0.15570700293   0  0  0
 ```
+NOTE: Once ten millions of extra CPU time credits had been granted, the number of nodes (32) utilised for the latter calculation (graphene/Ir(111)) has been deemed as unfit for the tier2 machine category, and therefore, completing this calculation or carrying out the third ("large") as-provided PRACE benchmark calculation is out of the question.
 
 ![](graphene.png)
 
-## HPC calculations: Installation and first runs with GROMACS, PLUMED, ALPHAFOLD, OPENMM and OPENPATHSAMPLING
+## Installation of GROMACS, PLUMED, ALPHAFOLD, OPENMM and OPENPATHSAMPLING
 
 This section constitutes a work plan in itself, since none of those codes have been run as yet. We are currently gathering information, particulary regarding input file syntax and generic input files to be used as sample cases. The PDB file ("geometryCIF_PDB_XSF_FASTA" ("k-cl-sol.pdb") repository) corresponding to the structure below (two molecules forming a complex in a KCL (saline) water solution) provides a good sample to be run with most codes, except for AlphaFold (not a protein). The example has been taken from the PAPRIKA distribution [^1]. See below:
 
