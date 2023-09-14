@@ -52,9 +52,9 @@ It must be noted that the inverse process of extracting geometries from QE outpu
 
 ## ASE total energy calculations and geometry file generation
 
-A few geometries produced with ASE are discussed next. Since the result of geometry optimisation using empirical potentials is very fast and  HPC omputation is out of the question for the time being, I have decided to include these as part of the atomistic geometry section. Furthermore, EMT empirical potentials are not reliable in surface chemistry, therefore, the resulting geometries are utlised only as examples for this section (geometry tutorial).
+A few geometries produced with ASE are discussed next. Since the result of geometry optimisation using empirical potentials is relatively fast and  HPC omputation is out of the question for the time being, I have decided to include these as part of the atomistic geometry section. Furthermore, EMT empirical potentials are not reliable in surface chemistry, therefore, the resulting geometries are utlised only as examples for this section.
 
-Some of the tutorial/example cases for both ASE and GPAW are run.  Moreover, the associated software WULFPACK and SSCHA is being looked into by the intern. The latter considers expensive phonon calculations, based on both quantum-espresso and ASE.
+Some of the tutorial/example cases for both ASE and GPAW are run. 
 
 ### Surfaces
 
