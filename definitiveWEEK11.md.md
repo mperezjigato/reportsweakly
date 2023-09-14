@@ -765,8 +765,7 @@ For the sake of completeness, some data regarding the small script at the begini
 
 # Conclusion
 
-The most difficult part of automatising the nanoparticle weak scaling calculations seems to be related to the "load balancing" problem. Rephrasing the above: Weak scaling is incompatible with MPI on CPUs. 
-Considering the number of MPI processes needs to be divisible by the number of nodes and also the outcome of approximately dividing the atom number by a certain factor (6), the "weak scaling" experiment becomes "approximate weak scaling". It does not seem to pose any problems in the OpenMP case.
+The most difficult part of automatising the nanoparticle weak scaling calculations seems to be related to the "load balancing" problem. Rephrasing the above: Strictly speaking, weak scaling is incompatible with MPI on CPUs.  Considering the number of MPI processes needs to be divisible by the number of nodes and also the outcome of approximately dividing the atom number by a certain factor (6), the "weak scaling" experiment becomes "approximate weak scaling" if load balancing is to be avoided. In any case, ATOOLS does not allow changes in the number of nodes/MPI processes/OpenMP threads, which means not even approximate weak scaling?
 
 [^1]: https://wiki.fysik.dtu.dk/ase/
 [^2]: https://wiki.fysik.dtu.dk/gpaw/
