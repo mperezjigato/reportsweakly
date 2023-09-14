@@ -2400,21 +2400,10 @@ print           "  minimum energy of perfect lattice = ${emin}"
 print           "  accepted MC moves = ${naccept}"
 print           "  neighbor list rebuilds = ${nbuild}"
 ```
+A collection of time snapshots during the MC optimisation is displayed next:
 
-![](image.00000.jpg)
+![](result2.jpg)
  
-![](image.00500.jpg)
-
-![](image.01000.jpg)
-
-![](image.01500.jpg)
-
-![](image.02000.jpg)
-
-![](image.02500.jpg)
-
-![](image.03000.jpg)
-
  - **MPI** LAMMPS calculation of quartz amorphisation via melting/quenching temperature ramps, as an **MPI** strong-scaling case: *mpiLAMMPSstrongscalsilicaamorph.tar.gz* (Genius)b
 ```bash
 #!/bin/bash
