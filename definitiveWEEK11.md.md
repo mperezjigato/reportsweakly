@@ -699,6 +699,13 @@ int main(int argc, char *argv[]) {
         return 0;
         }
 ```
+The slurm syntax for job array submission follows:
+
+>
+> $ array_ids=$(arange --data data.csv)
+> $ sbatch --array=${array_ids} mpi.slurm
+>
+
 After looking at the above cases and at the ATOOLS documentation, the need for the `acreate` command is anticipated for our case: A simple "data.csv"
 file seems to be required (NP,NT in the first line, NP corresponding to the main Oh size  parameter and NT to the cutoff/truncation parameter), although many instances of templating for all three `gpaw-python` files (step1.py, step2.py and step3.py) will be needed as well. Moreover, the 
 above samples let us see that ATOOLS is not designed to include any of the slurm variables (number of MPI processes, number of nodes, number of OMP threads) as one of the "data.csv" HPC-parameters, as previously explained by GJB.
