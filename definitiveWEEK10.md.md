@@ -5,8 +5,8 @@
 
 ### Pre-, post-processing and extension software
 
-Tools for pre- and post-processing as well as extension software is listed
-next in table form:
+The table below contains pre- and post-processing tools as well as extension sofware 
+for the MD and first-principles calculations software:
 
 |       |QE                |ASE           |GPAW        |ABINIT |LAMMPS         |
 |-------|------------------|--------------|------------|-------|---------------|
