@@ -747,7 +747,7 @@ module use /apps/leuven/skylake/2021a/modules/all
 module load ASE/3.22.0-intel-2021a
 module load GPAW/21.6.0-intel-2021a
 module load GPAW-setups/0.9.20000
-cd $SLURM_SUBMIT_DIR
+
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export OMP_PROC_BIND=true
 mpiexec gpaw python step1.py > outlog1.txt
