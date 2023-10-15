@@ -2,7 +2,6 @@
 # Internship - week 13 - summary
 
 ASE calculations using force fields from the OpenKIM collection, have been run for BCC metals. Tungsten (W) has been chosen as a testbed for having the highest melting point of all known materials.
-On the other hand, calculations with the (ASE driven) ASAP3 sotware and the DFTB+ package are described as well.
 
 ## *The SNAP machine-learning potential for Tungsten*
 
@@ -1841,7 +1840,7 @@ W       27.33136257      19.95999471      16.03215267      -0.00015650      -0.0
 W       27.52895489      22.03146985      18.09797301      -0.00017826       0.00018197      -0.00008663
 W       27.47235365      19.93696556      19.93696556       0.00000254      -0.00006134      -0.00006134
 ``` 
-The output is (calculation run on DSI guest2 laptop under WSL ubuntu 22.04 LTS):
+The output is:
 ```
       Step     Time          Energy         fmax
 BFGS:    0 19:59:09      810.861120        1.9482
@@ -1923,8 +1922,171 @@ BFGS:   75 20:01:22      686.461336        0.0020
 BFGS:   76 20:01:23      686.461328        0.0012
 BFGS:   77 20:01:25      686.461324        0.0010
 ```
-The pictures below depict both the ideal (left hand side) and optimal W fcc nanoparticles (right hand side):
+The pictures below depict both the ideal (lhs) and optimal (rhs) W fcc nanoparticles:
 
 ![](htog.png)
 
 Since a 15.34 % energy relaxation accompanies this optimisation, some estimates of the duration of fully quantum-mechanical GPAW calculations have been attemped on this cluster, this time on 'Genius'.
+
+ - Planewave GPAW: 36 process MPI run (1 skylake node - Genius).
+   The Python script below, should, in principle, sample the main    calculation parameters, ie planewave cutoff (kinetic) energy and    vacuum size:
+
+```python
+from ase.cluster.cubic import FaceCenteredCubic
+from gpaw import GPAW, PW
+a0 = 4.010717555880547
+surfaces = [(1, 0, 0), (1, 1, 0), (1, 1, 1)]
+layers = [6, 9, 5]
+atoms = FaceCenteredCubic('W', surfaces, layers, latticeconstant=a0)
+for x in [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]:
+    for y in [4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5, 12.0]:
+        calc = GPAW(mode=PW(x),
+                    xc='PBE',
+                    kpts={'size': (1, 1, 1), 'gamma': True},
+                    txt=f'convergence_{x}_{y}.txt')
+
+        atoms.calc = calc
+        atoms.center(vacuum=y)
+        print(x, y, atoms.get_forces())
+```
+   The slurm job submission script is shown as well:
+
+```bash   
+#!/usr/bin/env bash
+#SBATCH --account=lp_h_vsc35663
+#SBATCH --nodes=1
+#SBATCH --ntasks=36
+#SBATCH --cpus-per-task=1
+#SBATCH --time=06:00:00
+#SBATCH --cluster=genius
+module purge
+module use /apps/leuven/skylake/2021a/modules/all
+module load ASE/3.22.0-intel-2021a
+module load GPAW/21.6.0-intel-2021a
+module load GPAW-setups/0.9.20000
+mpirun gpaw python pwfcc.py > outlog.txt
+```
+   Since the planewave calculation has turned out to be too costly, only    one PW electronic iteration has been carried out at this point (PW 100   eV; vacuum 4 Angstrom). An excerpt of the output file (electronic        iterations) follows:
+   
+```
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       poisson
+iter:   1  02:47:49                -2101.616759
+iter:   2  03:03:16  -1.27  -0.97  -2312.417308
+```
+ - LCAO (acf) GPAW: 36 process MPI run (1 skylake node - Genius). In        order to make some progress on the electronic structure of the W fcc     cluster, faster LCAO calculations are attempted, which, could be used    as starting point for the expensive PW runs. Python input file as well   as slurm job submission script and an excerpt of the output file         detailing the electronic iterations are shown below:  
+
+```python
+from ase.cluster.cubic import FaceCenteredCubic
+from gpaw import GPAW, FermiDirac
+a0 = 4.010717555880547
+surfaces = [(1, 0, 0), (1, 1, 0), (1, 1, 1)]
+layers = [6, 9, 5]
+atoms = FaceCenteredCubic('W', surfaces, layers, latticeconstant=a0)
+for y in [4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5, 12.0]:
+        calc = GPAW(mode='lcao',
+                    basis='sz(dzp)',
+                    xc='PBE',
+                    occupations=FermiDirac(0.1),
+                    txt=f'convergence_{y}.txt')
+
+        atoms.calc = calc
+        atoms.center(vacuum=y)
+        print(y, atoms.get_forces())
+        atoms.write(f'cwf_{y}.gpw', 'all')
+```
+```bash
+#!/usr/bin/env bash
+#SBATCH --account=lp_h_vsc35663
+#SBATCH --nodes=1
+#SBATCH --ntasks=36
+#SBATCH --cpus-per-task=1
+#SBATCH --time=06:00:00
+#SBATCH --cluster=genius
+module purge
+module use /apps/leuven/skylake/2021a/modules/all
+module load ASE/3.22.0-intel-2021a
+module load GPAW/21.6.0-intel-2021a
+module load GPAW-setups/0.9.20000
+mpirun gpaw python lcao.py > outlog.txt
+```
+```
+                     log10-error:    total        iterations:
+           time      wfs    density  energy       poisson
+iter:   1  03:07:49                -6876.243455    1
+iter:   2  03:12:42         -1.27  -28369.348565    1
+iter:   3  03:17:35         -0.52  -12688.112180    1
+iter:   4  03:22:27         -0.75  -9635.904533    1
+iter:   5  03:27:20         -0.97  -7062.986317    1
+iter:   6  03:32:13         -1.24  -17395.513454    1
+iter:   7  03:37:07         -0.55  -15105.591570    1
+iter:   8  03:42:00         -0.68  -13702.068198    1
+iter:   9  03:46:54         -0.90  -20467.250806    1
+iter:  10  03:51:47         -0.57  -19290.488441    1
+iter:  11  03:56:41         -0.54  -90275.562305    1
+iter:  12  04:01:35         -0.41  -47423.108946    1
+iter:  13  04:06:30         -0.52  -49893.511541    1
+iter:  14  04:11:24         -0.45  -107480.593911    1
+iter:  15  04:16:19         -0.33  -106111.188655    1
+iter:  16  04:21:12         -0.41  -28621.031050    1
+iter:  17  04:26:08         -0.54  -58881.485077    1
+iter:  18  04:31:02         -0.45  -145516.244824    1
+iter:  19  04:35:56         -0.32  -37574.077737    1
+iter:  20  04:40:50         -0.50  -32483.384965    1
+iter:  21  04:45:45         -0.59  -32671.186483    1
+iter:  22  04:50:38         -0.51  -104530.865185    1
+iter:  23  04:55:34         -0.35  -84518.245789    1
+iter:  24  05:00:28         -0.43  -34039.750377    1
+iter:  25  05:05:23         -0.55  -67870.275221    1
+iter:  26  05:10:17         -0.44  -97776.691146    1
+iter:  27  05:15:11         -0.36  -93374.172361    1
+iter:  28  05:20:06         -0.41  -39419.571873    1
+iter:  29  05:25:00         -0.51  -36937.585736    1
+iter:  30  05:29:53         -0.51  -118789.986641    1
+iter:  31  05:34:49         -0.35  -42093.545194    1
+iter:  32  05:39:42         -0.48  -29561.835428    1
+iter:  33  05:44:37         -0.59  -48816.062478    1
+iter:  34  05:49:31         -0.47  -87501.147254    1
+iter:  35  05:54:25         -0.36  -81011.968151    1
+iter:  36  05:59:19         -0.43  -35368.693511    1
+iter:  37  06:04:14         -0.55  -52133.791183    1
+iter:  38  06:09:08         -0.46  -103900.865313    1
+iter:  39  06:14:03         -0.36  -85632.012277    1
+iter:  40  06:18:57         -0.42  -34645.273018    1
+iter:  41  06:23:52         -0.53  -41772.399178    1
+iter:  42  06:28:46         -0.49  -124011.929614    1
+iter:  43  06:33:41         -0.33  -48898.423648    1
+iter:  44  06:38:34         -0.46  -29331.348940    1
+iter:  45  06:43:29         -0.62  -46416.043557    1
+iter:  46  06:48:24         -0.48  -114078.677551    1
+iter:  47  06:53:18         -0.33  -60630.142946    1
+iter:  48  06:58:12         -0.46  -34645.645050    1
+iter:  49  07:03:07         -0.58  -55255.545588    1
+iter:  50  07:08:00         -0.46  -81215.512414    1
+iter:  51  07:12:55         -0.36  -75255.911817    1
+iter:  52  07:17:48         -0.44  -35000.974942    1
+iter:  53  07:22:42         -0.55  -39104.936141    1
+iter:  54  07:27:36         -0.49  -106720.799105    1
+iter:  55  07:32:31         -0.36  -104876.191818    1
+iter:  56  07:37:25         -0.40  -31599.367470    1
+iter:  57  07:42:19         -0.53  -52958.994882    1
+iter:  58  07:47:12         -0.46  -117697.914998    1
+iter:  59  07:52:08         -0.35  -53341.158092    1
+iter:  60  07:57:00         -0.45  -37376.662790    1
+iter:  61  08:01:55         -0.55  -35898.291838    1
+iter:  62  08:06:48         -0.51  -79037.322966    1
+iter:  63  08:11:43         -0.37  -97152.979628    1
+iter:  64  08:16:37         -0.41  -30523.583124    1
+iter:  65  08:21:32         -0.55  -60214.497711    1
+iter:  66  08:26:26         -0.45  -133488.978666    1
+iter:  67  08:31:21         -0.33  -55605.483907    1
+iter:  68  08:36:14         -0.45  -29430.877132    1
+iter:  69  08:41:09         -0.61  -44797.993588    1
+iter:  70  08:46:04         -0.48  -125032.976585    1
+iter:  71  08:50:58         -0.32  -43173.374781    1
+iter:  72  08:55:52         -0.50  -40826.256695    1
+iter:  73  09:00:47         -0.57  -56437.885677    1
+```
+The electronic structure calculation at PW 100 (fixed 4.0 Angstrom vacuum) has not converged, as evidenced by the charge-sloshing behaviour of the electronic iterations. Therefore, LCAO using dzp basis functions is not helping at all!
+
+One possibility to try would be TZ3P basis functions (currently not available at GPAW) for LCAO calculations, and obviously, attempting finite-difference real-space calculations. In any case, heavy CPU consumption is foreseen if planewave calculations are intended.
